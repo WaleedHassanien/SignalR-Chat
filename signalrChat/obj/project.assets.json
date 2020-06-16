@@ -1,0 +1,164 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Glimpse/1.8.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Glimpse.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Glimpse.Core.dll": {}
+        }
+      },
+      "Glimpse.AspNet/1.9.2": {
+        "type": "package",
+        "dependencies": {
+          "Glimpse": "1.8.6"
+        },
+        "compile": {
+          "lib/net45/Glimpse.AspNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Glimpse.AspNet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Glimpse/1.8.6": {
+      "sha512": "jubTSNDTgjCcCLibXAB28hnC2MPRjjG5PIrx4Wc5ZILsx8qt3bdEGGIS2LRMQk8mcGHWhEFFPLWFaJQJyWtS9Q==",
+      "type": "package",
+      "path": "glimpse/1.8.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/Glimpse.Core.Documentation.chm",
+        "glimpse.1.8.6.nupkg.sha512",
+        "glimpse.nuspec",
+        "lib/net35/Glimpse.Core.dll",
+        "lib/net40/Glimpse.Core.dll",
+        "lib/net45/Glimpse.Core.dll",
+        "tools/glimpse.psm1",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Glimpse.AspNet/1.9.2": {
+      "sha512": "nqELu3G99CWZIEpdi7Hp7SdBU+8Dl0Y9+CluVRa4HEIGziWmFQ1lJ5Hlyk/U9IRmJ5nolVbJngeWxO4Jz2jqpQ==",
+      "type": "package",
+      "path": "glimpse.aspnet/1.9.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/GlimpseSecurityPolicy.cs.pp",
+        "content/web.config.transform",
+        "glimpse.aspnet.1.9.2.nupkg.sha512",
+        "glimpse.aspnet.nuspec",
+        "lib/net35/Glimpse.AspNet.dll",
+        "lib/net40/Glimpse.AspNet.dll",
+        "lib/net45/Glimpse.AspNet.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Glimpse.AspNet >= 1.9.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Waleed\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Waleed\\source\\repos\\signalrChat\\signalrChat\\signalrChat.csproj",
+      "projectName": "signalrChat",
+      "projectPath": "C:\\Users\\Waleed\\source\\repos\\signalrChat\\signalrChat\\signalrChat.csproj",
+      "packagesPath": "C:\\Users\\Waleed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Waleed\\source\\repos\\signalrChat\\signalrChat\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Waleed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Glimpse.AspNet": {
+            "target": "Package",
+            "version": "[1.9.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Glimpse 1.8.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Glimpse",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Glimpse.AspNet 1.9.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Glimpse.AspNet",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

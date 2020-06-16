@@ -1,0 +1,21 @@
+﻿<div class="container ">
+    <div class="row">
+        <div class="col-md-5">
+            <span> Name</span><br />
+            <input type="text" id="txtName" class="form-control" /> <br />
+            <span> Message</span><br />
+            <textarea rows="10" cols="50" id="txtMessage" class="form-control"></textarea> <br />
+            <button type="submit" id="btnMessage" class="btn btn-info"> Send Message</button>
+        </div>
+
+        <div class="col-lg-7">
+            <h2>Message List</h2>
+            <ul id="listMessage" class="alert alert-info"></ul>
+        </div>
+
+    </div>
+
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
